@@ -12,17 +12,17 @@ var secret='f8898b0107aaA9^&(*!@YOUIHASDHJASD518c8aD14e4B61fAa3E1A4EBd8';
 const router = Router();
 import {register, login,checktoken,addTodo,updateTodo,alltodo,deletetodo,idtodo,alluser, updateTodoUser} from "../controllers/user.controller"
 
-router.post("/user", register);
-router.post("/user/login", login);
+router.post("/SiGN-UP", register);
+router.post("/SIGN-IN", login);
 
-router.post("/addtodo",checktoken,addTodo);
-router.post("/updatetodo",checktoken,updateTodo);
-router.post("/deletetodo",checktoken,deletetodo);
-router.get("/alltodo",checktoken,alltodo);
-router.post("/todobyid",checktoken,idtodo);
+router.post("/ADD-TO-DO",checktoken,addTodo);
+router.post("/UPDATE-TO-DO",checktoken,updateTodo);
+router.post("/REMOVE-TO-DO",checktoken,deletetodo);
+router.get("/GET-ALL-TO-DO",checktoken,alltodo);
+router.post("/GET-TO-DO-BY-ID",checktoken,idtodo);
 
-router.get("/alluser",checktoken,alluser);
-router.post("/assignuser",checktoken, updateTodoUser);
+router.get("/GET-ALL-USER",checktoken,alluser);
+router.post("/ASSIGN-TO-DO",checktoken, updateTodoUser);
 
 // router.get("/user/:id", ); 
 
