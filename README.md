@@ -10,26 +10,50 @@ Mysql :
     "password": "",
     "database": "testdatabase",
     
-tên Database:   testdatabase
-table database:
-  user :
+Tên Database:   testdatabase
+
+
+Table database:
+
+
+
+user :
     id : number
+    
     username: String,
+    
     fullname: String,
+    
     password: String
-  token:
+    
+    
+token:
+
     id: number,
+    
     DateCreate: Date,
+    
     token:String,
+    
     userId:number
-  todo:
+    
+    
+todo:
+
     id: number,
+    
     Name: String,
+    
     Description: String,
+    
     DateCompletion:Date,
+    
     Datemodification: Date,
+    
     status : number // 0 là New khác 0 là Complete
+    
     UserId : number,
+    
     DateCreation:date
     
     
